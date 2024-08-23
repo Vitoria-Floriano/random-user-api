@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react"
 import { getUser } from "../scripts/services/api"
 
-
-
 export const Card = () => {
-    const [user, setUser] = useState('');
+    const [user, setUser] = useState({});
 
     async function getUserData() {
         const userData = await getUser()
